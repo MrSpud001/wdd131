@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 header,
@@ -13,6 +14,11 @@ footer {
 }
 
 /* header */
+
+.header {
+  margin: 0 auto;
+}
+
 #course-title {
   display: block;
   text-align: center;
