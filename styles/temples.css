@@ -68,9 +68,9 @@ nav li a:hover {
   color: black;
 }
 
-.nav-toggle-button::before {
+/* .nav-toggle-button::before {
   content: "X";
-}
+} */
 
 .nav-toggle-button::before {
   content: "≡";
