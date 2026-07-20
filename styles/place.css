@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
+:root {
+}
+
 /* need a psuedo element somewhere */
 header,
 main,
@@ -24,8 +28,10 @@ footer {
   text-align: center;
   margin-bottom: 100px;
 }
-
 img {
+}
+
+picture img {
   /* display: block; */
   margin: auto;
   width: 100%;
@@ -56,6 +62,10 @@ img {
   text-align: center;
   padding: 30px;
 }
+
+.weather-box::after {
+}
+
 .weather-box div {
   display: flex;
   text-align: center;
