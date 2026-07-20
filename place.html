@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week 3 assignment - Ethan Shaw</title>
+    <meta
+      name="description"
+      content="week 3 assignment country page assignemnt by ethan shaw"
+    />
+    <meta name="author" content="Ethan Shaw" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=cloud_alert"
+    />
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>TITLE</h1>
+    </header>
+    <main>
+      <picture>
+        <source
+          srcset="images/placeholder-img-2.webp"
+          media="(min-width: 300px)"
+        />
+        <img src="images/placeholder-img-2.webp" alt="hero image" />
+      </picture>
+      <div class="data-box">
+        <h2>Data</h2>
+        <ol>
+          <li><p>Label: Value</p></li>
+          <li><p>Label: Value</p></li>
+          <li><p>Label: Value</p></li>
+          <li><p>Label: Value</p></li>
+          <li><p>Label: Value</p></li>
+        </ol>
+      </div>
+      <div class="weather-box">
+        <div>
+          <h2>Weather</h2>
+          <span class="material-symbols-outlined"> cloud_alert </span>
+        </div>
+        <ol>
+          <li><p id="windchill">Windchill: N/A</p></li>
+          <li><p>Label: Value</p></li>
+          <li><p>Label: Value</p></li>
+        </ol>
+      </div>
+    </main>
+
+    <footer>
+      <p><span id="currentyear"></span> | Ethan Shaw | USA</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

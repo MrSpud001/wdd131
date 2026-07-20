@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+/* need a psuedo element somewhere */
+header,
+main,
+footer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  border: 1px solid black;
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+img {
+  /* display: block; */
+  margin: auto;
+  width: 100%;
+
+  /* background-size: cover; */
+  position: relative;
+}
+
+.data-box {
+  background-color: antiquewhite;
+  border: 1px solid black;
+  text-align: center;
+  padding: 30px;
+}
+
+.data-box ol {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 10px;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.weather-box {
+  background-color: antiquewhite;
+  border: 1px solid black;
+  text-align: center;
+  padding: 30px;
+}
+.weather-box div {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.weather-box ol {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 10px;
+  list-style: none;
+  margin-top: 10px;
+}
+
+/* BIG WIDE DESKTOP VIEW CHUNGUS */
+@media screen and (min-width: 300px) {
+  img {
+    /* position: absolute; */
+  }
+
+  .data-box {
+    position: absolute;
+    left: 110px;
+    top: 250px;
+    width: 200px;
+  }
+
+  .weather-box {
+    position: absolute;
+    right: 110px;
+    top: 800px;
+    width: 350px;
+  }
+}
+
+/* SMALL MOBILE VIEW CHUNGUS */
+@media screen and (max-width: 300px) {
+  .data-box {
+    /* position: absolute;
+    left: 110px;
+    top: 250px; */
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .weather-box {
+    /* position: absolute;
+    right: 110px;
+    top: 800px; */
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+}
