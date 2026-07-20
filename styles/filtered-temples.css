@@ -1,0 +1,150 @@
+/* global */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header,
+main,
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.show {
+  display: flex;
+}
+
+/* .not-hidden {
+  display: block;
+} */
+
+/* header */
+
+header {
+  position: relative;
+}
+
+.header-main {
+  display: block;
+  text-align: center;
+  font-size: 32px;
+  background-color: rgb(113, 172, 118);
+  padding: 20px;
+}
+
+.nav-toggle-button {
+  display: none;
+  padding: 5px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  border-radius: 3px;
+  background-color: rgb(113, 172, 118);
+  border: none;
+  font-size: 32px;
+}
+
+nav ol {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(59, 59, 59);
+  padding: 12px;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav li {
+  list-style: none;
+  padding: 10px;
+  /* flex-direction: row; */
+}
+
+nav li a:hover {
+  color: rgb(151, 151, 151);
+}
+
+/* .nav-toggle-button::before {
+  content: "X";
+} */
+
+.nav-toggle-button::before {
+  content: "≡";
+}
+
+/* gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+
+.gallery figure {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery figure img {
+  width: 144px;
+}
+.gallery figure figcaption {
+  text-align: center;
+}
+
+/* footer */
+footer {
+  background-color: rgb(208, 230, 169);
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery figure img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-toggle-button {
+    display: block;
+  }
+
+  nav ol {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .gallery figure img {
+    width: 300px;
+  }
+}
+
+/* image cards */
+
+.img-card {
+  background-color: rgb(231, 231, 231);
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  gap: 5px;
+}
